@@ -1,0 +1,19 @@
+/* ==============================================
+            Secound Page Style
+=============================================== */
+
+.card-flag{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+
+.card-flag p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.card-data{
+    text-align: center;
+    font-size: 16px;
+}

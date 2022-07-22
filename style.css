@@ -1,0 +1,468 @@
+/* ================================================
+                    Common CSS
+================================================ */
+body{
+    background-color: #E9EBDE;
+    color: #161616;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+/* ================================================
+                Our Hero Area Style
+================================================= */
+
+.container{
+    width: 96%;
+    margin: auto;
+}
+
+.bg-color{
+    background-color: #161616;
+    color: #E9EBDE;
+    border-radius: 15px;
+    animation: animate 15s infinite;
+}
+
+/* ==============================================
+            Banner Animation Start
+=============================================== */
+
+@keyframes animate {
+    0%{
+        background-color: #161616;
+    }
+
+    20%{
+        background-color: #546b2f;
+    }
+
+    40%{
+        background-color: #4cb3aa;
+    }
+    60%{
+        background-color: #4439d8;
+    }
+    80%{
+        background-color: #eb22c9;
+    }
+    100%{
+        background-color: #0a3510;
+    }
+}
+
+/* =============================================
+            Banner Animation End
+============================================== */
+
+.hero-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-area-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-area-left{
+    display: inline-block;
+    width: 500px;
+}
+
+.hero-area-left h1{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.hero-area-left p{
+    padding-bottom: 25px;
+    margin-top: -30px;
+}
+
+.hero-area-right{
+    width: 400px;
+    margin: auto;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: tomato;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px 30px;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: tomato;
+}
+
+.custom-btn{
+    margin-left: 8px;
+}
+
+/* ================================================
+            Our Gallary Area Style
+================================================= */
+.gallary-main{
+    display: flex;
+    margin-top: 100px;
+}
+
+.gallary-main-left{
+    background-color: #161616;
+    border-radius: 10px;
+    min-width: 300px;
+    margin-right: 20px;
+    height: 220px;
+    padding: 20px 0px;
+}
+
+.left-side-menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.left-side-menu li{
+    margin-top: 25px;
+    margin-left: -30px;
+}
+
+.left-side-menu li a{
+    text-decoration: none;
+    background-color: #fff;
+    color: #161616;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.left-side-menu li a:hover{
+    background-color: tomato;
+    color: #fff;
+}
+
+#active{
+    background-color: tomato;
+    color: #fff;
+}
+
+.gallary-card{
+    margin-bottom: -30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.card{
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+.card iframe{
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+}
+
+
+.card h3{
+    padding: 0px 10px;
+}
+
+.card button{
+    margin-left: 10px;
+    margin-top: 15px;
+    padding: 5px 25px;
+    font-weight: bolder;
+}
+
+.card span{
+    margin: 10px;
+    opacity: .8;
+}
+
+.view-all-div{
+    margin: 50px 0px;
+    text-align: center;
+    display: none;
+}
+
+.viwe-btn{
+    transition: .5s;
+}
+
+/* ==============================================
+                Footer Area
+=============================================== */
+.footer-box{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-color: #161616;color: #fff;
+}
+
+.footer-chaild-section{
+    padding-top: 50px;
+}
+
+.footer-chaild-section hr{
+    width: 80%;
+}
+
+.footer-link{
+    text-align: center;
+}
+
+.footer-link ul{
+    list-style: none;
+}
+
+.footer-link ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-link ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(112, 111, 111);
+    transition: .3s;
+}
+
+.footer-link ul li a:hover{
+    color: rgb(199, 195, 195);
+}
+
+
+/* =============================================
+            fontawesome icon Area
+============================================== */
+
+.custom{
+    margin: 5px 15px;
+    font-size: 20px;
+}
+
+#fb-logo{
+    transition: .3s;
+}
+
+#fb-logo:hover{
+    color: #183D93;
+}
+
+#youtube-logo{
+    transition: .3s;
+}
+
+#youtube-logo:hover{
+    color: #F70000;
+}
+
+#whatsapp-logo{
+    transition: .3s;
+}
+
+#whatsapp-logo:hover{
+    color: #139F0D;
+}
+
+/* =============================================
+        Using Media Query for Responsiv
+============================================== */
+
+@media only screen and (max-width: 1100px) {
+    .hero-area-left{
+        display: inline-block;
+        width: 400px;
+    }
+
+    .hero-area-left h1{
+        font-size: 50px;
+    }
+
+    .hero-area-right{
+        width: 350px;
+    }
+  }
+
+@media only screen and (max-width: 880px) {
+    .hero-area-left{
+        display: inline-block;
+        width: 300px;
+    }
+
+    .hero-area-left h1{
+        font-size: 35px;
+    }
+
+    .hero-area-right{
+        width: 250px;
+    }
+
+    .gallary-main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .gallary-main-left{
+        background-color: inherit;
+        margin: -60px 0px;
+    }
+
+    .left-side-menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-side-menu li{
+        display: inline;
+        margin: auto;
+    }
+
+    .view-all-div{
+        display: block;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .hero-area-left{
+        display: inline-block;
+        width: 300px;
+    }
+
+    .hero-area-left h1{
+        font-size: 35px;
+    }
+
+    .hero-area-right{
+        width: 250px;
+    }
+
+    .gallary-main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .gallary-main-left{
+        background-color: inherit;
+    }
+
+    .left-side-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left-side-menu li{
+        display: inline;
+        margin: auto;
+    }
+
+    .card h3{
+        font-size: 14px;
+    }
+  }
+
+@media only screen and (max-width: 655px) {
+    .hero-area{
+        display: block;
+    }
+
+    .hero-area-left{
+        display: inline-block;
+        width: 500px;
+    }
+
+    .hero-area-left h1{
+        font-size: 40px;
+    }
+
+    .hero-area-right{
+        width: 350px;
+        margin-top: 40px;
+    }
+
+    .footer-box{
+        height: 90vh;
+    }
+
+    .footer-link ul li{
+        list-style: none;
+        display: block;
+        margin: 10px 0px;
+    }
+  }
+
+@media only screen and (max-width: 550px) {
+    .hero-area{
+        display: block;
+    }
+
+    .hero-area-left{
+        display: inline-block;
+        width: 300px;
+    }
+
+    .hero-area-left h1{
+        font-size: 40px;
+    }
+
+    .hero-area-right{
+        width: 350px;
+        margin-top: 40px;
+    }
+
+    .gallary-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .view-all-div{
+        display: none;
+    }
+    
+  }
+
+  @media only screen and (max-width: 400px) {
+    .hero-area{
+        display: block;
+    }
+
+    .hero-area-left{
+        display: inline-block;
+        width: 300px;
+    }
+
+    .hero-area-left h1{
+        font-size: 30px;
+    }
+
+    .hero-area-right{
+        width: 300px;
+        margin-top: 40px;
+    }
+  }
+  
